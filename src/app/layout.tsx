@@ -28,9 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>
+      <body
+        className={`${dmSans.className} min-h-screen  bg-[#070817] text-white/90 `}
+      >
         <Header />
-        <main>{children}</main>
+        <main className="h-full  w-full">{children}</main>
         <Footer />
       </body>
     </html>
